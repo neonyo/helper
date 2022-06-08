@@ -14,7 +14,7 @@ func ArrayColumnKey(input []map[string]interface{}, indexKey string) map[interfa
 	columns := make(map[interface{}]map[string]interface{}, len(input))
 	for _, val := range input {
 		if _, ok := val[indexKey]; ok {
-			columns[indexKey] = val
+			columns[val[indexKey]] = val
 		}
 	}
 	return columns
