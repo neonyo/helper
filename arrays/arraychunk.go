@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func arrayChunk(s []interface{}, size int) (arr [][]interface{}, err error) {
+func ArrayChunk(s []interface{}, size int) (arr [][]interface{}, err error) {
 	if size < 1 {
 		return nil, errors.New("size: cannot be less than 1")
 	}
