@@ -10,7 +10,7 @@ func ArrayColumn(input map[int]map[string]interface{}, columnKey string) []inter
 	return columns
 }
 
-func ArrayColumnKey(input map[int]map[string]interface{}, indexKey string) map[interface{}]map[string]interface{} {
+func ArrayColumnKey(input []map[string]interface{}, indexKey string) map[interface{}]map[string]interface{} {
 	columns := make(map[interface{}]map[string]interface{}, len(input))
 	for _, val := range input {
 		if _, ok := val[indexKey]; ok {
