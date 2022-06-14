@@ -1,6 +1,6 @@
 package helper
 
-func arrayUniqueString(arr []string) []string {
+func ArrayUniqueString(arr []string) []string {
 	size := len(arr)
 	result := make([]string, 0, size)
 	temp := map[string]struct{}{}
@@ -13,7 +13,7 @@ func arrayUniqueString(arr []string) []string {
 	return result
 }
 
-func arrayUniqueInt(arr []int) []int {
+func ArrayUniqueInt(arr []int) []int {
 	size := len(arr)
 	result := make([]int, 0, size)
 	temp := map[int]struct{}{}
