@@ -1,11 +1,11 @@
 package helper
 
-func ArrayMerge(ss ...[]interface{}) []interface{} {
+func ArrayMerge(ss ...[]string) []string {
 	n := 0
 	for _, v := range ss {
 		n += len(v)
 	}
-	s := make([]interface{}, 0, n)
+	s := make([]string, 0, n)
 	for _, v := range ss {
 		s = append(s, v...)
 	}
